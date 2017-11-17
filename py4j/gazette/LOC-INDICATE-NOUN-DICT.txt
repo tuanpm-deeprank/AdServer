@@ -1,0 +1,72 @@
+﻿phường
+xã
+tổ
+số
+phố
+quận
+huyện
+tỉnh
+p
+q
+tp
+nhà
+dist
+ward
+level
+st
+cụm
+tòa
+thành phố
+tp
+cầu
+sông
+suối
+rừng
+bản
+khu vực
+đảo
+quần đảo
+ấp
+hồ
+biển
+đỉnh
+đặc khu
+núi
+đỉnh
+đỉnh núi
+cửa khẩu
+vùng
+đầm
+nước
+NTLS
+cửa biển
+cửa
+kênh
+khu
+đường
+xứ
+căn cứ
+địa đạo
+huyện lỵ
+huyện ủy
+đền
+chùa
+bót
+đồn bót
+sàn
+sân bay
+lâm trường
+thủ đô
+nhà ga
+trung tâm
+làng
+ngoại ô
+biển hồ
+cù lao
+sân
+vùng
+thượng nguồn
+quốc tịch
+bến xe
+xã đội
+tòa nhà

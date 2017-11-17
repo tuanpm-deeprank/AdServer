@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chương trình phân tích quảng cáo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+			  crossorigin="anonymous"></script>
+  <style>
+          .header{
+		text-align:center;
+		font-family: 'Alfa Slab One', cursive;
+		}
+
+    .glyphicon{
+      font-size: 50px;
+    }
+    .color{
+      color: red;
+    }
+    .te{
+      font-size: 20px;
+    }
+
+    .hidden-btn{
+      margin: 10px;
+      margin-top: 20px;
+    }
+
+    .show-btn{
+      margin: 10px;
+    }
+    span{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="header">Chương trình phân tích quảng cáo</h1>
+  <br>
+  <h3>Bài báo:</h3>
+  <h5>
+    <a href="#"><span class="glyphicon glyphicon-info-sign te"></span></a>
+  </h5>
+    {% csrf_token %}
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-11">
+          <textarea class="form-control" rows="5" id="paper" name="paper"></textarea>
+        </div>
+      </div>
+    </div>
+	<button type="" class="btn btn-success" id="btnBack">Back</button>
+</div>
+<div id="Ad1" style="width:304px;height:228px;">Quang cao 1</div>
+<div id="Ad2" style="width:304px;height:228px;">Quang cao 2</div>
+<div id="Ad3" style="width:304px;height:228px;">Quang cao 3</div>
+</body>
+</html>
+
+<script>
+  $(document).ready(function(){
+    $('.container-hidden').hide();
+    $('.alert').hide();
+    $('#paper').change(function(){
+      $('.alert').hide();
+      $('.hidden-btn').hide();
+      $('.container-hidden').hide();
+    });
+    $.noConflict();
+    $('#btnPost').click(function(){
+            paper = $('#paper').val();
+            console.log("paper:" + paper);
+            $.ajax({
+                url: '/AdWebApp/post/',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                  paper:$('#paper').val(),
+                  csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+                },
+                success: function (data) {
+                    console.log("Data:", JSON.stringify(data));
+                    $('.alert').hide();
+                    console.log(data.check);
+                    if(data.check == '0')
+                    {
+                      $('.alert-success').show();
+                      //$('#passH3').show();
+                    }
+                    else if (data.check == '2')
+                    {
+                      $('.alert-warning').show();
+                      //$('#failedH3').show();
+                    }
+                    else if (data.check == '1')
+                    {
+                      $('.alert-danger').show();
+                    }
+
+                    $('.container-hidden').show();
+                },
+                error: function (err) {
+                    alert("Error: Cannot get data", err);
+                }
+            });
+    });
+
+    //Cick Not Exactly
+    $('#btnNotCorrect').click(function(){
+      $('.show-btn').hide();
+      $('.hidden-btn').show();
+    });
+
+    //Click btn Normal
+    $('#btnNormal').click(function(){
+      addLabel('0 ');
+    });
+
+    //Click btn Politic
+    $('#btnPolitic').click(function(){
+      addLabel('2 ');
+    });
+
+    //Click btn Bad
+    $('#btnBad').click(function(){
+      addLabel('1 ');
+    });
+  });
+
+</script>

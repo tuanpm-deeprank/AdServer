@@ -1,0 +1,324 @@
+﻿Đông Nam Á
+Đảo Ashmore và Cartier
+Đảo Christmas
+Đảo Cocos
+Đài Loan
+Đông Timor
+Birmani
+Brunei
+Cam pu chia
+Hồng Kông
+Hoàng Sa
+Indonesia
+Lào
+Mã Lai
+Philippines
+Quần đảo Trường Sa
+Singapore
+Thái Lan
+Việt Nam
+Bắc Mỹ
+Alabama
+Alaska
+Arizona
+Arkansas
+Bắc Carolina
+Bắc Dakota
+Bermuda
+California
+Canada
+Colorado
+Connecticut
+Delaware
+Florida
+Georgia
+Greenland
+Hawaii
+Hoa Kỷ
+Idaho
+Illinois
+Indiana
+Iowa
+Kansas
+Kentucky
+Louisiana
+Maine
+Maryland
+Massachusetts
+Mexico
+Michigan
+Minnesota
+Mississippi
+Missouri
+Montana
+Nam Carolina
+Nam Dakota
+Nebraska
+Nevada
+New Hampshire
+New Jersey
+New Mexico
+Ohio
+Oklahoma
+Oregon
+Pennsylvania
+Rhode Island
+Saint Pierre và Miquelon
+Tây Virginia
+Tennessee
+Texas
+Tiểu bang New York
+Tiểu bang Washington
+Utah
+Vermont
+Virginia
+Wisconsin
+Wyoming
+Caribê
+Đảo Cayman
+Đảo Navassa
+Đảo Vierges
+Đảo Vierges Anh
+Anguilla
+Antigua và Barbuda
+Antilles của Hà Lan
+Aruba
+Bahamas
+Barbades
+Cộng hoà Dominicana
+Cuba
+Dominica
+Grenada
+Guadeloupe
+Haiti
+Iles Thổ và Caiques
+Jamaica
+Marinique
+Montserrat
+Puerto Rico
+Saint Kitts và Nevis
+Saint Lucia
+Saint Martin
+Saint Vincent and Grenadines
+Saint-Barthélémy
+Trinidad và Tobago
+Châu Đại Dương
+Đảo Baker
+Đảo Cook
+Đảo Coral Sea
+Đảo Howland
+Đảo Jarvis
+Đảo Marshall
+Đảo Midway
+Đảo Norfolk
+Đảo Pitcairn
+Đảo Salomon
+Đảo Wake
+Atoll de Palmyra
+Atoll Johnston
+Bắc Marianne
+Fiji
+Guam
+Kingman Recif
+Kiribati
+Micronesia
+Nauru
+New Caledoni
+New Zealand
+Niue
+Palau
+Papua Tân Guinea
+Polyseni Pháp
+Samoa
+Samoa Mỹ
+Tokelao
+Tonga
+Tuvalu
+Úc
+Vanuatu
+Wallis và Futuna
+Châu Á
+Ấn Độ
+Afghanistan
+Armenia
+Azerbaijan
+Bangladesh
+Butan
+Gruzia
+Hàn Quốc
+Kazakhstan
+Kyrgyzstan
+Maldives
+Mông Cổ
+Nepal
+Nga
+Nhật Bản
+Pakistan
+Sri Lanka
+Tajikistan
+Triều Tiên
+Trung Quốc
+Turkmenistan
+Uzbekistan
+Châu Âu
+Đảo Faroe
+Đảo Man
+Đức
+Đan Mạch
+Ai Len
+Albani
+Andora
+Áo
+Bỉ
+Bồ Đào Nha
+Ba Lan
+Belarus
+Bosna và Hercegovina
+Bulgari
+Cộng hòa Séc
+Croatia
+Estonia
+Gibraltar
+Guernesey
+Hà Lan
+Hungari
+Hy Lạp
+Iceland
+Jersey
+Kosovo
+Latvia
+Liechtenstein
+Litva
+Luxembourg
+Macedonia
+Malta
+Moldova
+Monaco
+Montenegro
+Na Uy
+Phần Lan
+Pháp
+Quần đảo Canaria
+Rumani
+San Marino
+Serbia
+Slovakia
+Slovenia
+Tây Ban Nha
+Thụy Điển
+Thụy Sĩ
+Thành Vatican
+Ucraina
+Vương quốc Anh
+Ý
+Châu Phi
+Đảo De Glorioso
+Đảo Europa
+Đảo Tromelin
+Ai Cập
+Algérie
+Angola
+Bờ biển Ngà
+Bassas da India
+Bênin
+Botswana
+Burkina Faso
+Burundi
+Cộng hòa Congo
+Cộng hòa dân chủ nhân dân Congo
+Cộng hòa Nam Phi
+Cộng hoà Trung Phi
+Cabo Verde
+Camerun
+Comoros
+Djibuti
+Eritrea
+Ethiopia
+Gabon
+Gambie
+Ghana
+Guinê
+Guinê xích đạo
+Guinê-Bissau
+Juan de Nova Island
+Kenya
+Lesotho
+Liberia
+Libi
+Madagascar
+Malawi
+Mali
+Maroc
+Mauritanie
+Mauritius
+Mayotte
+Mozambique
+Nam Sudan
+Namibie
+Niger
+Nigeria
+Réunion
+Rwanda
+Saint Helène
+São Tomé và Príncipe
+Sénégal
+Seychelles
+Sierra Leone
+Somalie
+Souaziland
+Sudan
+Tanzania
+Tây Sahara
+Tchad
+Togo
+Tunisie
+Uganda
+Zambia
+Zimbabwe
+Nam Mỹ
+Đảo Phục Sinh
+Argentina
+Bolivia
+Brasil
+Chilê
+Colombia
+Ecuador
+Guyane
+Guyane Pháp
+Malouines
+Paraguay
+Peru
+Suriname
+Uruguay
+Venezuela
+Trung Đông
+Ả Rập Xê út
+Akrotiri
+Bờ tây sông Jordan
+Bahrain
+Các Tiểu vương quốc Ả rập Thống nhất
+Dải Gaza
+Dhekelia
+Iran
+Iraq
+Israel
+Jordan
+Koweit
+Kypros
+Li băng
+Oman
+Qatar
+Syri
+Thổ Nhĩ Kỳ
+Yemen
+Trung Mỹ
+Belize
+Costa Rica
+El Salvador
+Guatemala
+Honduras
+Nicaragua
+Panama
+
+VN
+USA

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chương trình phân tích quảng cáo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+			  crossorigin="anonymous"></script>
+  <style>
+          .header{
+		text-align:center;
+		font-family: 'Alfa Slab One', cursive;
+		}
+
+    .glyphicon{
+      font-size: 50px;
+    }
+    .color{
+      color: red;
+    }
+    .te{
+      font-size: 20px;
+    }
+
+    .hidden-btn{
+      margin: 10px;
+      margin-top: 20px;
+    }
+
+    .show-btn{
+      margin: 10px;
+    }
+    span{
+      width: 100%;
+    }
+  </style>
+</head>
+<img>
+
+<div class="container">
+  <h1 class="header">Chương trình phân tích quảng cáo</h1>
+  <br>
+  <h3>Hãy nhập bài báo:</h3>
+  <h5>
+    <a href="#"><span class="glyphicon glyphicon-info-sign te"></span></a>
+  </h5>
+    {% csrf_token %}
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm-11">
+          <textarea class="form-control" rows="15" id="paper" name="paper"></textarea>
+        </div>
+      </div>
+    </div>
+	<button type="" class="btn btn-success" id="btnPost">Post</button>
+</div>
+<br>
+<table style="width:100%">
+  <tr>
+    <td align="center"><img id="Ad0" style="width:304px;height:228px;display:none;"></td>
+    <td align="center"><img id="Ad1" style="width:304px;height:228px;display:none;"></td>
+    <td align="center"><img id="Ad2" style="width:304px;height:228px;display:none;"></td>
+  </tr>
+  <tr>
+    <td align="center"><p id="AdPrice0"></p></td>
+    <td align="center"><p id="AdPrice1"></p></td>
+    <td align="center"><p id="AdPrice2"></p></td>
+  </tr>
+  <tr>
+    <td align="center"><p id="AdTitle0"></p></td>
+    <td align="center"><p id="AdTitle1"></p></td>
+    <td align="center"><p id="AdTitle2"></p></td>
+  </tr>
+</table>
+</body>
+</html>
+
+<script>
+  $(document).ready(function(){
+    $('.container-hidden').hide();
+    $('.alert').hide();
+    $('#paper').change(function(){
+      $('.alert').hide();
+      $('.hidden-btn').hide();
+      $('.container-hidden').hide();
+    });
+    $.noConflict();
+    $('#btnPost').click(function(){
+            paper = $('#paper').val();
+            console.log("paper:" + paper);
+            $.ajax({
+                url: '{% url 'post' %}',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                  paper:$('#paper').val(),
+                  csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+                },
+                success: function (data) {
+                    console.log("Data:", JSON.stringify(data.adList));
+                    var item0 = data.adList[0];
+                    var item1 = data.adList[1];
+                    var item2 = data.adList[2];
+
+                    $('#Ad0').attr("src",item0.link);
+                    $('#Ad1').attr("src",item1.link);
+                    $('#Ad2').attr("src",item2.link);
+                    $('#Ad0').show();
+                    $('#Ad1').show();
+                    $('#Ad2').show();
+
+                    $('#AdPrice0').text(item0.price);
+                    $('#AdPrice1').text(item1.price);
+                    $('#AdPrice2').text(item2.price);
+
+                    $('#AdTitle0').text(item0.title);
+                    $('#AdTitle1').text(item1.title);
+                    $('#AdTitle2').text(item2.title);
+                },
+                error: function (err) {
+                    alert("Error: Cannot get data", err);
+                }
+            });
+    });
+
+    //Cick Not Exactly
+    $('#btnNotCorrect').click(function(){
+      $('.show-btn').hide();
+      $('.hidden-btn').show();
+    });
+
+    //Click btn Normal
+    $('#btnNormal').click(function(){
+      addLabel('0 ');
+    });
+
+    //Click btn Politic
+    $('#btnPolitic').click(function(){
+      addLabel('2 ');
+    });
+
+    //Click btn Bad
+    $('#btnBad').click(function(){
+      addLabel('1 ');
+    });
+  });
+</script>
